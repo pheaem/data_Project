@@ -12,7 +12,7 @@
             MenuForm.Show()
             Me.Hide()
         Else
-            MsgBox("Sorry Incorrect Username and Password", MsgBoxStyle.OkOnly, "Invalid")
+            MsgBox("Incorrect Username and Password", MsgBoxStyle.OkOnly, "Invalid")
         End If
     End Sub
 End Class
