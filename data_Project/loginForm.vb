@@ -10,7 +10,7 @@
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtUserName.Text = "admin" And txtPassword.Text = "admin" Then
             MsgBox("Log in Successfully!", MsgBoxStyle.OkOnly, "Log in Form")
-            Menu.Show()
+            MenuForm.Show()
             Me.Hide()
         Else
             MsgBox("Sorry Incorrect Username and Password", MsgBoxStyle.OkOnly, "Invalid")
