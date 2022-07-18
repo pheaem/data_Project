@@ -37,6 +37,9 @@ Partial Class loginForm
         '
         'btnLogin
         '
+        Me.btnLogin.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnLogin.Location = New System.Drawing.Point(104, 442)
@@ -48,6 +51,9 @@ Partial Class loginForm
         '
         'btnClear
         '
+        Me.btnClear.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnClear.BackColor = System.Drawing.Color.LightCoral
         Me.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnClear.Location = New System.Drawing.Point(472, 442)
@@ -59,8 +65,11 @@ Partial Class loginForm
         '
         'Label2
         '
+        Me.Label2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(104, 353)
+        Me.Label2.Location = New System.Drawing.Point(104, 331)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(73, 20)
         Me.Label2.TabIndex = 6
@@ -68,8 +77,11 @@ Partial Class loginForm
         '
         'Label1
         '
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(104, 282)
+        Me.Label1.Location = New System.Drawing.Point(104, 260)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 20)
         Me.Label1.TabIndex = 5
@@ -77,24 +89,27 @@ Partial Class loginForm
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(188, 346)
+        Me.txtPassword.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPassword.Location = New System.Drawing.Point(188, 324)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(432, 27)
         Me.txtPassword.TabIndex = 4
         '
         'txtUserName
         '
-        Me.txtUserName.Location = New System.Drawing.Point(188, 275)
+        Me.txtUserName.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtUserName.Location = New System.Drawing.Point(188, 253)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(432, 27)
         Me.txtUserName.TabIndex = 3
         '
         'groupboxLogIn
         '
-        Me.groupboxLogIn.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.groupboxLogIn.BackColor = System.Drawing.Color.LightCyan
+        Me.groupboxLogIn.BackColor = System.Drawing.Color.Transparent
         Me.groupboxLogIn.Controls.Add(Me.PictureBox1)
         Me.groupboxLogIn.Controls.Add(Me.Label2)
         Me.groupboxLogIn.Controls.Add(Me.Label1)
@@ -111,10 +126,16 @@ Partial Class loginForm
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(104, 80)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 26)
+        Me.PictureBox1.MaximumSize = New System.Drawing.Size(516, 130)
+        Me.PictureBox1.MinimumSize = New System.Drawing.Size(516, 130)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(516, 130)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
