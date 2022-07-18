@@ -1,5 +1,5 @@
 ﻿Public Class loginForm
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -14,5 +14,9 @@
         Else
             MsgBox("Incorrect Username and Password", MsgBoxStyle.OkOnly, "Invalid")
         End If
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+
     End Sub
 End Class

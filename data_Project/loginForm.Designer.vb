@@ -25,51 +25,42 @@ Partial Class loginForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(loginForm))
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.txtUserName = New System.Windows.Forms.TextBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.groupboxLogIn = New System.Windows.Forms.GroupBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.groupboxLogIn.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(179, 258)
+        Me.btnLogin.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnLogin.Location = New System.Drawing.Point(104, 442)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(148, 63)
         Me.btnLogin.TabIndex = 1
         Me.btnLogin.Text = "Login"
-        Me.btnLogin.UseVisualStyleBackColor = True
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(410, 258)
+        Me.btnClear.BackColor = System.Drawing.Color.LightCoral
+        Me.btnClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClear.Location = New System.Drawing.Point(472, 442)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(148, 63)
         Me.btnClear.TabIndex = 0
-        Me.btnClear.Text = "Login"
-        Me.btnClear.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(32, 28)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(414, 590)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(163, 187)
+        Me.Label2.Location = New System.Drawing.Point(104, 353)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(73, 20)
         Me.Label2.TabIndex = 6
@@ -78,7 +69,7 @@ Partial Class loginForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(158, 116)
+        Me.Label1.Location = New System.Drawing.Point(104, 282)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 20)
         Me.Label1.TabIndex = 5
@@ -86,46 +77,46 @@ Partial Class loginForm
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(242, 184)
+        Me.txtPassword.Location = New System.Drawing.Point(188, 346)
         Me.txtPassword.Name = "txtPassword"
-        Me.txtPassword.Size = New System.Drawing.Size(335, 27)
+        Me.txtPassword.Size = New System.Drawing.Size(432, 27)
         Me.txtPassword.TabIndex = 4
         '
         'txtUserName
         '
-        Me.txtUserName.Location = New System.Drawing.Point(242, 113)
+        Me.txtUserName.Location = New System.Drawing.Point(188, 275)
         Me.txtUserName.Name = "txtUserName"
-        Me.txtUserName.Size = New System.Drawing.Size(335, 27)
+        Me.txtUserName.Size = New System.Drawing.Size(432, 27)
         Me.txtUserName.TabIndex = 3
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(634, 28)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(402, 157)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 11
-        Me.PictureBox2.TabStop = False
         '
         'groupboxLogIn
         '
-        Me.groupboxLogIn.BackColor = System.Drawing.SystemColors.MenuHighlight
+        Me.groupboxLogIn.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.groupboxLogIn.BackColor = System.Drawing.Color.LightCyan
+        Me.groupboxLogIn.Controls.Add(Me.PictureBox1)
         Me.groupboxLogIn.Controls.Add(Me.Label2)
         Me.groupboxLogIn.Controls.Add(Me.Label1)
         Me.groupboxLogIn.Controls.Add(Me.btnLogin)
         Me.groupboxLogIn.Controls.Add(Me.btnClear)
         Me.groupboxLogIn.Controls.Add(Me.txtPassword)
         Me.groupboxLogIn.Controls.Add(Me.txtUserName)
-        Me.groupboxLogIn.Location = New System.Drawing.Point(471, 191)
+        Me.groupboxLogIn.Location = New System.Drawing.Point(205, 50)
         Me.groupboxLogIn.Name = "groupboxLogIn"
-        Me.groupboxLogIn.Size = New System.Drawing.Size(722, 427)
+        Me.groupboxLogIn.Size = New System.Drawing.Size(734, 568)
         Me.groupboxLogIn.TabIndex = 10
         Me.groupboxLogIn.TabStop = False
         Me.groupboxLogIn.Text = "Login"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(104, 80)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(516, 130)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
         '
         'loginForm
         '
@@ -133,27 +124,23 @@ Partial Class loginForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1213, 640)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.groupboxLogIn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "loginForm"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.groupboxLogIn.ResumeLayout(False)
         Me.groupboxLogIn.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents txtUserName As TextBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents groupboxLogIn As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
